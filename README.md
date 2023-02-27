@@ -16,3 +16,5 @@ Unit tests are sparse and only caters for the API calls. No tests had been writt
 Do not expect to see cool tools like `cucumber` and `gherkin` in here, this is purely a test to see how UnSplash API works and can be used to test ***3rd*** party services.
 
 To run the test, you have either the option of the standard `npm run test` command, which will launch ***Jasmine*** runner in your default browser, or the headless command, `npm run headless`, to display the runs in the console window.
+
+[![codecov](https://codecov.io/gh/JadedEric/unsplash-photobook/branch/main/graph/badge.svg?token=vFJ5akeX3N)](https://codecov.io/gh/JadedEric/unsplash-photobook)
