@@ -51,12 +51,6 @@ jobs:
         run: |
           npm run test --
 
-      - name: Conventional Changelog Action
-        id: changelog
-        uses: TriPSs/conventional-changelog-action@v3
-        with:
-          output-file: "false"
-
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
         with:
