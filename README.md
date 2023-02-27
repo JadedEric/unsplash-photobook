@@ -5,11 +5,9 @@ UnSplash Photobook is a small application that utilizes the API end-points from 
 ## Getting Started
 
 
-The application is written in Angular 14, and requires, at the very least, NodeJS v18 to be installed.
+The application is written in Angular 15, and requires, at the very least, NodeJS v16 to be installed.
 
-This is in part due to the fact that pre-v18, TLS support was sparce and to keep/ ensure that our security standards are up to date, we use v18, however, the application should not, not be functional on NodeJS v16.
-
-Simply `clone` the repository, and update the `api_key` property in the global variables file, before firing off a call to launch the website with `npm run dev`.
+Simply `clone` the repository, and update the `api_key` property in the global variables file, before firing off a call to launch the website with `npm run start` and view the web site on the default URL: `http://localhost:4200`.
 
 ## Unit Tests
 
