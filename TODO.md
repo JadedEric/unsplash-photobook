@@ -12,13 +12,16 @@
 
 
 - [ ] Features
-    - [ ] Clear out base template
-    - [ ] Unit test HTTP Interceptor
-    - [ ] Mock necessary objects on HTTP response from UnSplash
-    - [ ] Unit test retrieval of categories
+    - [x] Clear out base template
+    - [x] Unit test HTTP Interceptor
+    - [x] Mock necessary objects on HTTP response from UnSplash
+    - [ ] Unit test retrieval of topics
     - [ ] Unit test retrieval of photos in categories
     - [ ] Unit test retrieval of single photos
     - [ ] Develop landing page
     - [ ] Develop photo carousel page
     - [ ] Develop click-through page
     - [ ] Develop menu component
+
+- [ ] Nice to haves
+    - [ ] Unit test exceptions in the services

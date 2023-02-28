@@ -6,8 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "headless": "ng test --browsers ChromeHeadless",
+    "test": "ng test --code-coverage",
+    "headless": "ng test --code-coverage --browsers ChromeHeadless",
     "lint": "ng lint"
   },
   "private": true,
@@ -26,6 +26,7 @@
     "karma-cli": "^2.0.0",
     "karma-remap-istanbul": "^0.6.0",
     "karma-webpack": "^5.0.0",
+    "ngx-masonry": "^14.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
