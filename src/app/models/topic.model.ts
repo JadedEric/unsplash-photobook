@@ -6,4 +6,5 @@ export class Topic {
   public visibility = '';
   public featured = false;
   public total = -1;
+  public cover = '';
 }

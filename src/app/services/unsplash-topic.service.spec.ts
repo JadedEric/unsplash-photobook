@@ -12,7 +12,8 @@ const topics: Topic[] = [{
   description: 'Some interesting description here',
   visibility: 'featured',
   featured: true,
-  total: 22
+  total: 22,
+  cover: ''
 }, {
   id: 'randomTopic2',
   slug: 'slug_2',
@@ -20,7 +21,8 @@ const topics: Topic[] = [{
   description: 'Some interesting description here',
   visibility: 'featured',
   featured: true,
-  total: 4
+  total: 4,
+  cover: ''
 }];
 
 const topics$ = of(topics);
