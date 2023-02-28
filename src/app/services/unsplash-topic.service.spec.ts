@@ -2,17 +2,21 @@ import { HttpClient } from "@angular/common/http";
 import { MockService } from "ng-mocks";
 import { of } from "rxjs";
 import { environment } from "src/environments/environment";
-import { Topic } from "../models";
 import { UnsplashTopicService } from "./unsplash-topic.service";
 
-const topics: Topic[] = [{
+const topics = [{
   id: 'randomTopic1',
   slug: 'slug_1',
   title: 'Title Here',
   description: 'Some interesting description here',
   visibility: 'featured',
   featured: true,
-  total: 22
+  total: 22,
+  cover_photo: {
+    urls: {
+      small: ''
+    }
+  }
 }, {
   id: 'randomTopic2',
   slug: 'slug_2',
@@ -20,7 +24,12 @@ const topics: Topic[] = [{
   description: 'Some interesting description here',
   visibility: 'featured',
   featured: true,
-  total: 4
+  total: 4,
+  cover_photo: {
+    urls: {
+      small: ''
+    }
+  }
 }];
 
 const topics$ = of(topics);

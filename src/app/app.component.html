@@ -1,1 +1,34 @@
-<router-outlet></router-outlet>
+
+<div style="display: flex; flex-direction: column;" *ngIf="!topicSelected">
+  <h2 style="margin: 65px 0; text-align: center;">Topics</h2>
+  <div style="height: 100%; margin: 0 65px">
+    <ngx-masonry [options]="masonryOptions" style="width: 100%; margin: 0;" [ordered]="true">
+      <div ngxMasonryItem class="masonry-item" *ngFor="let topic of topics$ | async; index as i;" style="width: 26%;">
+        <a href="javascript:void(0);" (click)="onSelectTopic(topic)" style="display: block; position: relative; color: white">
+          <img src="{{topic.cover}}" alt="{{topic.description}}" width="100%" />
+          <div style="position: absolute; right: 15px; bottom: 15px; background-color: rgba(0, 0, 0, 0.4); padding: 5px 15px;">
+            <label>{{ topic.title }}</label>
+          </div>
+        </a>
+      </div>
+    </ngx-masonry>
+  </div>
+</div>
+
+<div style="display: flex; flex-direction: column;" *ngIf="topicSelected">
+  <h2 style="text-align: center; margin: 65px 0;">
+    <a href="javascript:void(0);" (click)="returnToTopics();" style="padding-right: 15px; text-decoration: none; font-size: 12px;">Return</a>
+    <label>Photos for {{ selectedTopic }}</label>
+  </h2>
+  <ngb-carousel *ngIf="photos$ | async as photos">
+    <ng-template ngbSlide *ngFor="let photo of photos; index as i;">
+      <div class="picsum-img-wrapper">
+        <img [src]="photo.urls!.regular" alt="{{ photo.description }}" style="width: 100%; height: 550px" />
+        <div class="carousel-caption">
+          <h3>{{ photo.user }}</h3>
+          <p>{{ photo.description }}</p>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

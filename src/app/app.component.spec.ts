@@ -1,16 +1,23 @@
+import { HttpClientModule } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { UnsplashTopicPhotosService, UnsplashTopicService } from './services';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        HttpClientModule
       ],
       declarations: [
         AppComponent
       ],
+      providers: [
+        UnsplashTopicService,
+        UnsplashTopicPhotosService
+      ]
     }).compileComponents();
   });
 
@@ -20,9 +27,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'unsplash-photobook'`, () => {
+  it(`should have as title 'UnSplash Photobook'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('unsplash-photobook');
+    expect(app.title).toEqual('UnSplash Photobook');
   });
 });
