@@ -11,17 +11,19 @@
     - [x] Add Bootstrap for Angular to project
 
 
-- [ ] Features
+- [x] Features
     - [x] Clear out base template
     - [x] Unit test HTTP Interceptor
     - [x] Mock necessary objects on HTTP response from UnSplash
-    - [ ] Unit test retrieval of topics
-    - [ ] Unit test retrieval of photos in categories
-    - [ ] Unit test retrieval of single photos
-    - [ ] Develop landing page
-    - [ ] Develop photo carousel page
-    - [ ] Develop click-through page
-    - [ ] Develop menu component
+    - [x] Unit test retrieval of topics
+    - [x] Unit test retrieval of photos in categories
+    - [x] Unit test retrieval of single photos
+    - [x] Develop landing page
+    - [x] Develop photo carousel page
+    - [x] Develop click-through page
 
 - [ ] Nice to haves
     - [ ] Unit test exceptions in the services
+    - [ ] Remove the hard-coded API key
+    - [ ] Set up versioning, tagging on `main` merge
+    - [ ] Configure changelogging
