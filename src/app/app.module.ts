@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthenticationInterceptor } from './interceptors/authentication-interceptor';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { UnsplashTopicService } from './services/unsplash-topic.service';
+import { UnsplashTopicPhotosService } from './services/unsplash-topic-photos.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { UnsplashTopicService } from './services/unsplash-topic.service';
       provide: HTTP_INTERCEPTORS,
       useExisting: AuthenticationInterceptor
     },
-    UnsplashTopicService
+    UnsplashTopicService,
+    UnsplashTopicPhotosService
   ],
   bootstrap: [AppComponent]
 })

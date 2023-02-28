@@ -17,11 +17,11 @@ module.exports = (config) => {
       'karma-jasmine-html-reporter'
     ],
     client: {
-      clearContext: false
+      clearContext: true
     },
     coverageIstanbulReporter: {
       dir: './coverage/',
-      reports: ['lcovonly'],
+      reports: ['lcovonly', 'html'],
       fixWebpackSourcePaths: true,
       combineBrowserReports: true,
       verbose: true
