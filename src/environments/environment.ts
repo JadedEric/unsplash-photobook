@@ -2,7 +2,8 @@ export const environment = {
   production: true,
   unsplash: {
     apiKey: '',
-    secretKey: ''
+    secretKey: '',
+    url: 'https://api.unsplash.com/'
   },
   acceptVersion: 'v1'
 };
