@@ -17,7 +17,7 @@ Do not expect to see cool tools like `cucumber` and `gherkin` in here, this is p
 
 To run the test, you have either the option of the standard `npm run test` command, which will launch ***Jasmine*** runner in your default browser, or the headless command, `npm run headless`, to display the runs in the console window.
 
-[![codecov](https://codecov.io/gh/JadedEric/unsplash-photobook/branch/dev/graph/badge.svg?token=vFJ5akeX3N)](https://codecov.io/gh/JadedEric/unsplash-photobook)
+[![codecov](https://codecov.io/gh/JadedEric/unsplash-photobook/branch/main/graph/badge.svg?token=vFJ5akeX3N)](https://codecov.io/gh/JadedEric/unsplash-photobook)
 
 Code coverage is generated as both an `HTML` view, as well as a standard `lcov` info file which can be read by any supported interface. Alternately, each `Pull Request` triggers a build, off which code coverage is generated and push to `covecov.io`. The standard view for these are publically accessible, by clicking on the link in an associated `PR`.
 
